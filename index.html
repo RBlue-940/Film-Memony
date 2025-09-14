@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胶片记忆</title>
+	<link rel="stylesheet" href="CSS/style.css"/>
+	<link rel="stylesheet" href="CSS/reset.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="site-title">胶片记忆</div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active" data-section="home">首页推荐</a></li>
+                        <li><a href="#" data-section="search">电影搜索</a></li>
+                        <li><a href="#" data-section="feed">关注动态</a></li>
+                        <li><a href="#" data-section="profile">个人中心</a></li>
+                        <li><a href="#" data-section="about">关于我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="home" class="section active">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="image/xiaoshenke.jpg" alt="电影海报">
+                        <div class="carousel-caption">
+                            <h3>肖申克的救赎</h3>
+                            <p>希望让人自由，这部电影在豆瓣获得9.7分的高分评价</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/daomkjian.jpg" alt="电影海报">
+                        <div class="carousel-caption">
+                            <h3>盗梦空间</h3>
+                            <p>诺兰执导的科幻经典，梦境与现实交织的悬疑之旅</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/taitannikh.jpg" alt="电影海报">
+                        <div class="carousel-caption">
+                            <h3>泰坦尼克号</h3>
+                            <p>经典爱情电影，跨越阶级的凄美爱情故事</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <div class="carousel-control prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="carousel-control next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+
+            <h2 class="section-title">豆瓣Top100电影</h2>
+            <div class="movie-grid">
+            </div>
+        </section>
+
+        <section id="search" class="section">
+            <h2 class="section-title">搜索电影</h2>
+            <div class="search-box">
+                <input type="text" placeholder="输入电影名称...">
+                <button>搜索</button>
+            </div>
+            
+            <h3 class="section-title">按类型筛选</h3>
+            <div class="categories">
+                <div class="category active" dataGenre="全部">全部</div>
+                <div class="category" dataGenre="喜剧">喜剧</div>
+                <div class="category" dataGenre="爱情">爱情</div>
+                <div class="category" dataGenre="科幻">科幻</div>
+				<div class="category" dataGenre="犯罪">犯罪</div>
+                <div class="category" dataGenre="动作">动作</div>
+                <div class="category" dataGenre="动画">动画</div>
+				<div class="category" dataGenre="剧情">剧情</div>
+            </div>
+            
+            <div class="movie-grid">
+            </div>
+        </section>
+        <section id="feed" class="section">
+            <h2 class="section-title">关注动态</h2>
+            <div id="feed-content"></div>
+        </section>
+        <section id="profile" class="section">
+            <h2 class="section-title">个人中心</h2>
+            <div id="profile-content"></div>
+        </section>
+        <section id="about" class="section">
+            <h2 class="section-title">关于我们</h2>
+            
+            <div class="about-content">
+                <div class="about-img">
+					<div><img src="image/img-a.jpg"/></div>
+					<div><img src="image/img-b.jpg"/></div>
+					<div><img src="image/img-c.jpg"/></div>
+					<div><img src="image/img-d.jpg"/></div>
+				</div>
+                
+                <div class="about-text">
+                    <p>胶片记忆是一个致力于分享优质电影资源的平台.</p>
+					<p>希望通过这个平台帮助更多人发现和欣赏优秀的电影作品。</p>
+                    <p>我们的使命是让每一部值得被看到的电影都能找到它的观众，让电影艺术继续照亮人们的生活。</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>联系我们</h3>
+                    <p>电子邮件: 123456789@dfavafdv.com</p>
+                    <p>地址: 江西省</p>
+                    <p>微信公众号: 胶片记忆</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>@ 胶片记忆 - 发现好电影</p>
+    </footer>
+	<script src="JS/all.js"></script>
+</body>
+</html>
