@@ -69,7 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	generateMovieCards(movies, '#home .movie-grid');
 	generateMovieCards(movies, '#search .movie-grid');
 });
-	
+
+var add = true;
 window.onscroll = function(){
 	var list1 = document.getElementsByClassName("movie-grid")[0];
 	var listHeight1 = list1.offsetHeight;
@@ -87,7 +88,11 @@ window.onscroll = function(){
 	var scrollTop2 = document.documentElement.scrollTop;
 	var windowHeight2 = document.documentElement.clientHeight;
 	if((listHeight2+listTop2)-Math.round(windowHeight2+scrollTop2)<50){
+		if(add==true){
 			generateMovieCards(movies, '#search .movie-grid');
+			add=true;
+		}
+		add=false;
 	}
 	
 }
